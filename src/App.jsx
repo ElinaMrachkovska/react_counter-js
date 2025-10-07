@@ -1,15 +1,14 @@
-import { useState } from 'react';
 import './App.scss';
 
 export const App = () => {
   const [count, setCount] = useState(0);
 
   const addOne = () => {
-    setCount(prev => prev + 1);
+     setCount(prev => prev + 1);
   };
 
   const add100 = () => {
-    setCount(prev => prev + 100);
+     setCount(prev => prev + 100);
   };
 
   // DON'T change the code below
@@ -20,12 +19,9 @@ export const App = () => {
 
     addOne();
   };
-
-  setCount(prev => {
-    const next = prev + 1;
-
-    return next % 5 === 0 ? next + 100 : next;
-  });
+  setCount(prev => { const next = prev + 1;
+    
+    return next % 5 === 0 ? next + 100 : next; });
 
   return (
     <div className="App">
